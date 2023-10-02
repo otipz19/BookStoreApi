@@ -1,6 +1,5 @@
 ﻿using Domain.Contracts.Repositories;
 using Domain.Entities;
-using Domain.Exceptions;
 using Domain.Pagination;
 using Infrastructure.Data;
 using Infrastructure.Pagination;
