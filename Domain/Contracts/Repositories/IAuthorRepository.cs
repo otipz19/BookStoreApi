@@ -6,8 +6,8 @@ namespace Domain.Contracts.Repositories;
 public interface IAuthorRepository
 {
     Task<IPaginatedList<Author>> GetAllAuthors(int pageIndex, int pageSize);
-    Author GetAuthorById(int id);
-    void AddAuthor(Author author);
-    void UpdateAuthor(Author author);
-    void DeleteAuthor(int id);
+    Task<Author> GetAuthorById(int id);
+    Task<Author> AddAuthor(Author author);
+    Task UpdateAuthor(Author author);
+    Task DeleteAuthor(int id);
 }

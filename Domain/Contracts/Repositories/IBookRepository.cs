@@ -11,8 +11,8 @@ public interface IBookRepository
         string? titleSearch = null,
         string? authorSearch = null,
         string? genreSearch = null);
-    Book GetBookById(int id);
-    void AddBook(Book book);
-    void UpdateBook(Book book);
-    void DeleteBook(int id);
+    Task<Book> GetBookById(int id);
+    Task<Book> AddBook(Book book);
+    Task UpdateBook(Book book);
+    Task DeleteBook(int id);
 }
