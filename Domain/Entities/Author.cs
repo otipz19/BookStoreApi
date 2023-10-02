@@ -2,10 +2,8 @@
 
 namespace Domain.Entities;
 
-public class Author
+public class Author : BaseEntity
 {
-    public int Id { get; set; }
-
     [MaxLength(500)] 
     public string Name { get; set; } = default!;
 

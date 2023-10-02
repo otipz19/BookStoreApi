@@ -2,10 +2,8 @@
 
 namespace Domain.Entities;
 
-public class Genre
+public class Genre : BaseEntity
 {
-    public int Id { get; set; }
-
     [MaxLength(500)] 
     public string Name { get; set; } = default!;
 

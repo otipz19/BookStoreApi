@@ -2,10 +2,8 @@
 
 namespace Domain.Entities;
 
-public class Book
+public class Book : BaseEntity
 {
-    public int Id { get; set; }
-
     [MaxLength(500)]
     public string Title { get; set; } = default!;
 

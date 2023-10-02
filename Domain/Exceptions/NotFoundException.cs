@@ -1,9 +1,9 @@
 ﻿namespace Domain.Exceptions
 {
-    public abstract class NotFoundException : Exception
+    public class NotFoundException<T> : Exception
     {
-        protected NotFoundException(string entityName, int id)
-            : base($"{entityName} with ID {id} was not found.")
+        public NotFoundException(int id)
+            : base($"{typeof(T).Name} with ID {id} was not found.")
         {
         }
     }
