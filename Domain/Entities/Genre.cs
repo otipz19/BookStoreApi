@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+namespace Domain.Entities;
+
 public class Genre
 {
     public int Id { get; set; }

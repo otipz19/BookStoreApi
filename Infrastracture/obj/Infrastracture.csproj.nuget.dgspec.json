@@ -4,14 +4,14 @@
     "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Infrastracture\\Infrastracture.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Infrastracture\\Infrastracture.csproj": {
+    "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Infrastracture\\Infrastracture.csproj",
-        "projectName": "Infrastracture",
-        "projectPath": "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Infrastracture\\Infrastracture.csproj",
+        "projectUniqueName": "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\TASth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Infrastracture\\obj\\",
+        "outputPath": "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TASth\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,71 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Infrastracture\\Infrastracture.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Infrastracture\\Infrastracture.csproj",
+        "projectName": "Infrastracture",
+        "projectPath": "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Infrastracture\\Infrastracture.csproj",
+        "packagesPath": "C:\\Users\\TASth\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Infrastracture\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TASth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\TASth\\source\\repos\\BookStoreApi\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

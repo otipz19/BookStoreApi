@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+namespace Domain.Entities;
+
 public class Book
 {
     public int Id { get; set; }
