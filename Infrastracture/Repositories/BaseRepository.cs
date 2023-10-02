@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {
-    public abstract class BaseRepository<TEntity>: IBaseRepository<TEntity>
+    public abstract class BaseRepository<TEntity>
         where TEntity : BaseEntity
     {
         protected readonly AppDbContext _context;
