@@ -1,5 +1,9 @@
-﻿using Infrastructure.Data;
+﻿using FluentValidation;
+using FluentValidation.AspNetCore;
+using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using Service.Validators;
+using WebApi.Mapping;
 
 namespace WebApi
 {
@@ -14,6 +18,16 @@ namespace WebApi
             });
 
             return services;
+        }
+
+        public static IServiceCollection AddMappings(this IServiceCollection services)
+        {
+            return services.AddAutoMapper(typeof(MappingProfile));
+        }
+
+        public static IServiceCollection AddValidators(this IServiceCollection services)
+        {
+            return services.AddValidatorsFromAssemblyContaining<AuthorDtoValidator>();
         }
     }
 }

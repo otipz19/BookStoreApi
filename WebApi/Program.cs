@@ -12,6 +12,10 @@ namespace WebApi
 
             builder.Services.AddAppDbContext(builder.Configuration);
 
+            builder.Services.AddMappings();
+
+            builder.Services.AddValidators();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
