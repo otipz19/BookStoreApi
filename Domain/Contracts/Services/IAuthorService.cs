@@ -1,14 +1,14 @@
-﻿using Domain.Entities;
+﻿using Domain.Dto;
 using Domain.Pagination;
 
 namespace Domain.Contracts.Services
 {
     public interface IAuthorService
     {
-        Task<IPaginatedList<Author>> GetAllAuthors(int pageIndex, int pageSize);
-        Task<Author> GetAuthorById(int id);
-        Task<Author> AddAuthor(Author author);
-        Task UpdateAuthor(Author author);
-        Task DeleteAuthor(int id);
+        Task<IPaginatedList<AuthorDto>> GetAll(int pageIndex, int pageSize);
+        Task<AuthorDto> GetById(int id);
+        Task<AuthorDto> Add(AuthorDto authorDto);
+        Task Update(AuthorDto authorDto);
+        Task Delete(int id);
     }
 }
