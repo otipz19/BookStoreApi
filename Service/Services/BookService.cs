@@ -66,7 +66,11 @@ namespace Service.Services
 
         private async Task ValidateBookDto(CreateBookDto bookDto)
         {
-            await _validator.ValidateAndThrowAsync(bookDto);
+            var validationResult = await _validator.ValidateAsync(bookDto);
+            if (!validationResult.IsValid)
+            {
+                throw new BadRequestException<CreateBookDto>("GenreDto is not valid.", bookDto);
+            }
 
             var author = await _authorRepository.GetById(bookDto.AuthorId);
             if (author == null)

@@ -1,5 +1,4 @@
 ﻿using Domain.Dto;
-using Domain.Entities;
 using Domain.Pagination;
 
 namespace Domain.Contracts.Services
